@@ -5,7 +5,7 @@ Python3 version of FVCOM toolbox.
 Coming Soon ...
 
 
-create a mesh_grid for FVCOM
+Creating a mesh_grid for FVCOM
 ----------------------------
 
     from fvcompy.meshgrid import FVCOM
