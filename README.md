@@ -4,23 +4,34 @@ Python3 version of FVCOM toolbox.
 
 Coming Soon ...
 
+
 create a mesh_grid for FVCOM
 ----------------------------
+
 from fvcompy.meshgrid import FVCOM
+
 my_mgrid = FVCOM()
 
+
 my_mgrid.read('tst.2dm','tst.dep')
+
 my_mgrid.write('tst_grd.dat','tst_dep.dat')
 
 
 Wind forcing
 ------------
+
 from fvcompy.forces import Wind
+
 my_wind = Wind(my_mgrid)
 
+
 my_wind.ttime = ...
+
 my_wind.U10 = ...  # or my_wind.Uwind
+
 my_wind.V10 = ...  # or my_wind.Vwind
+
 
 my_wind.write('tst_wnd.nc','title',mode='w')
 
